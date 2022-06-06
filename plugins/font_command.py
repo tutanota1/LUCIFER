@@ -40,7 +40,7 @@ async def style_buttons(c, m, cb=False):
         InlineKeyboardButton('Next ➡️', callback_data="nxt")
     ]]
     if not cb:
-        await m.reply_text(m.text, reply_markup=InlineKeyboardMarkup(buttons), quote=True)
+        await m.reply_text(m.reply_to_message.text, reply_markup=InlineKeyboardMarkup(buttons), quote=True)
     else:
         await m.answer()
         await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
