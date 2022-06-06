@@ -22,7 +22,7 @@ CALCULATE_BUTTONS = InlineKeyboardMarkup(
             InlineKeyboardButton("3", callback_data="3")
         [
             InlineKeyboardButton("0", callback_data="0"),
-            InlineKeyboardButton("📞", callback_data="+")
+            InlineKeyboardButton("📞", callback_data="AC")
         ]
     ]
 )
